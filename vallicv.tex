@@ -1,66 +1,84 @@
 \documentclass{mycv}
 \usepackage[utf8]{inputenc}
+\usepackage{float}
 \usepackage{enumitem}		% Itemize
+\usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}		% Links
 \hypersetup{
 	colorlinks,
 	linkcolor={red!50!black},
 	citecolor={blue!50!black},
-	urlcolor={black!50!black}
+	urlcolor={black!80!black}
 }
 \usepackage{bbding}			% Email symbol
 \usepackage{fontawesome}	% Phone symbol
+\usepackage[
+top    = 2cm,
+bottom = 3cm,
+left   = 3.00cm,
+right  = 2.50cm]{geometry}
 
 %	Globally defines lists
-\setlist[enumerate]{leftmargin=4.5cm, topsep=0.05cm, parsep=0cm, itemsep=0cm, label={\protect\raisebox{2pt}{\tiny\textbullet}}}
+\setlist[enumerate]{leftmargin=\the\myleng, rightmargin=0.5cm,  topsep=0.15cm, parsep=0cm, itemsep=0cm, label={\protect\raisebox{2pt}{\tiny\textbullet}}}
 %	Margin to left, margin to top, margin between items, smaller textbullet
 
 \begin{document}
-	
-\cvtitle{Curriculum Vitae}
-\vspace{0.5cm}
+
 \name{Valerie Meissner}
 \address{Lange Rötterstraße 110}{D-68167 Mannheim}
 \contact{+49 157 5350 8553}{av-meissner@gmx.de}
 
+\vspace{1cm}
+	
+\cvtitle{Curriculum Vitae}
 
+\vspace{0.5cm}
 
 \section{Persönliche Daten}
-Valerie Meissner \\
-Geboren am 15. März 1991 in Karlsruhe
+Valerie Meissner \brk
+Geboren am 15. März 1991 in Karlsruhe \brk
 
 
 \section{Ausbildung}
-\periodentry{10/2012 -- 01/2017}{Karl-Ruprechts-Universität Heidelberg}
-\educitems{1. Staatsexamen Note 7.64}{\textit{Schwerpunkt}: Europa- \& Wirtschaftsrecht}
+\periodentry{10/2012 -- 07/2016}{Ruprecht-Karls-Universität Heidelberg}
+\studyentry{Rechtswissenschaften}{Erste Juristische Prüfung}{7,64}{Europa- \& Wirtschaftsrecht}
 \periodentry{09/2013 -- 01/2014}{Faculté du Droit, Université Montpellier 1}
-\educitems{Auslandssemester Erasmus}{\textit{Schwerpunkt}: Verfassungs- \& Europarecht}
+\erasentry{Auslandssemester Erasmus}{Verfassungs- \& Europarecht}
 \periodentry{10/2010 -- 09/2012}{Ludwigs-Maximilians-Universität München}
-\educitems{Rechtswissenschaften}{}
+\muentry{Rechtswissenschaften}{}
 \dateentry{06/2010}{Fichte-Gymnasium Karlsruhe}
-\educitems{Abibac Note 1.9}{}
-\educitems{Diplôme du baccalauréat mention bien}{}
-\periodentry{09/2007 -- 08/2008}{Sixth Form Ringwood School, England}
-\educitems{AS-Levels AAAB}{}
+\abientry{Abibac}{1,9}{Diplôme du baccalauréat général}{mention bien}
+\periodentry{09/2007 -- 08/2008}{Ringwood School Sixth Form, England}
+\schlentry{AS-Levels}{AAAB}
 
-\section{Arbeitserfahrungen}
-\periodentry{06/2017 -- 10/2017}{Teilzeitstelle als wissenschaftliche Hilfskraft, Institute of Public Health, Universität Heidelberg}
-\profitems{Unterstützung bei der Organisation}{der Summerschool}{des Masterprogramms für Studierende aus Entwicklungsländern}
-\periodentry{01/2014 -- 10/2017}{Nebentätigkeiten im Kultur- \& Gastronomiebereich}
-\profitems{Deutsches und Internationales Filmfestival Heidelberg/Mannheim}{Klassisches Musikfestival Heidelberger Frühling}{Hostessvermittlung Instaff GmbH, Restaurant La Locanda Heidelberg}
+\section{Praktische Erfahrungen}
+\periodentry{06/2017 -- 10/2017}{Institute of Public Health, Universität Heidelberg}
+\profentry{Teilzeitstelle als}{wissenschaftliche Hilfskraft}
+\profitem{Unterstützung bei der Organisation der Summerschool und des Masterprogramms für Studierende aus Entwicklungsländern}
+\periodentrywob{03/2014 -- 10/2017}{Nebentätigkeiten im Kultur- \& Gastronomiebereich}
+\profitems{Deutsches und Internationales Filmfestival Heidelberg / Mannheim}{Klassisches Musikfestival Heidelberger Frühling}{Hostessvermittlung Instaff GmbH, Restaurant La Locanda Heidelberg}
+
+\newpage
+
+\name{Valerie Meissner}
+\address{Lange Rötterstraße 110}{D-68167 Mannheim}
+\contact{+49 157 5350 8553}{av-meissner@gmx.de}
+
+\vspace{1cm}
+
 \section{Praktika}
 \dateentry{09/2011}{JVA Karlsruhe}
-\periodentry{06/2016 -- 07/2016 }{Strafrechtskanzlei Kling}
+\periodentry{02/2015 -- 03/2015}{Strafrechtskanzlei Kling Mannheim}
 \section{Ehrenamtliches Engagement}
-\periodentry{02/2017 --03/2017}{Association Bayti, Essaouira Marokko}
-\profitems{Französischnachhilfe}{}{}
-\periodentry{12/2017 -- 02/2018}{Casa Ronald, Buenos Aires Argentinien}
-\profitems{Unterstützung bei Organisation des gemeinschaftlichen Wohnens der Familien schwer erkrankter Kinder}{}{}
-\section{Weitere Kenntenisse \& Qualifikationen}
-\langsubsection{Sprachen}{Deutsch (Muttersprache),}{Französisch (sehr gut),}{Spanisch (gut),}{Portugiesisch (gut),}{Englisch (naja)}{Arabisch (super)}
-
-\section{Sonstiges}
-
-
+\periodentrywob{12/2017 -- 02/2018}{Casa Ronald, Buenos Aires Argentinien}
+\profitem{Unterstützung bei Organisation des gemeinschaftlichen Wohnens der Familien schwer erkrankter Kinder}
+\periodentrywob{02/2017 -- 03/2017}{Association Bayti, Essaouira Marokko}
+\profitem{Französischnachhilfe}
+\periodentrywob{07/2010 -- 09/2010}{Neuseeland \& Australien}
+\profitem{Willing working on organic farms (wwoofing)}
+\section{Sprachkenntnisse}
+\langentry{\textsc{Französisch} & \hspace{\the\mylengt}Sehr gut \\}{\textsc{Englisch} & \hspace{\the\mylengt}Sehr gut \\}{\textsc{Spanisch} & \hspace{\the\mylengt}Sehr gut \\}{\textsc{Portugiesisch} & \hspace{\the\mylengt}Gut \\}{\textsc{Arabisch} & \hspace{\the\mylengt}Anfänger \\}{\textsc{Latinum} & \\}
+\signature{signature}
+\append{Abschluss- \& Abiturzeugnisse sowie Sprach- \& Auslandsaufenthaltsnachweise sofern vorhanden}
 \end{document} 
