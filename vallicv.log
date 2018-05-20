@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.7)  19 MAY 2018 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.7)  20 MAY 2018 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,11 @@ entering extended mode
 (./vallicv.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(./mycv.cls
+(./vallicv.cls
+
+LaTeX Warning: You have requested document class `vallicv',
+               but the document class provides `mycv'.
+
 Document Class: mycv 2018/05/12 My custom CV class
 (c:/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -656,9 +660,9 @@ Package rerunfilecheck Info: File `vallicv.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 8381 strings out of 493054
- 118907 string characters out of 6138328
- 216713 words of memory out of 5000000
+ 8380 strings out of 493054
+ 118918 string characters out of 6138328
+ 216716 words of memory out of 5000000
  11814 multiletter control sequences out of 15000+600000
  6491 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
