@@ -5,7 +5,6 @@
 \RequirePackage{calc}
 \RequirePackage{datetime}
 
-
 %---------------%
 %	CUSTOMIZE	%
 %---------------%
