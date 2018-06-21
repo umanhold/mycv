@@ -12,7 +12,7 @@
 \pagenumbering{gobble}
 \renewcommand{\arraystretch}{0.67}
 
-\newdateformat{myformat}{\THEDAY{. }\monthname[\THEMONTH] \THEYEAR}
+\newdateformat{myformat}{\monthname[\THEMONTH]{ }\THEDAY{, }\THEYEAR}
 
 % define lengths
 
@@ -33,16 +33,16 @@
 \addtolength{\myleng}{6.4em}
 
 \newlength{\mylengt}
-\settowidth{\mylengt}{10/2015 -- 08/2018}
-\addtolength{\mylengt}{-3.2em}
+\settowidth{\mylengt}{ }
+\addtolength{\mylengt}{0.27em}
 
 \newlength{\mylength}
 \settowidth{\mylength}{Stata, R}
 \addtolength{\mylength}{2.9em}
 
 \newlength{\nmyl}
-\settowidth{\nmyl}{seit 2008}
-\addtolength{\nmyl}{5.48em}
+\settowidth{\nmyl}{since 2008}
+\addtolength{\nmyl}{4.27em}
 
 
 
@@ -107,15 +107,15 @@
 
 %	Education Entries
 \newcommand{\studyentry}[5]{
-	{\hspace*{\the\myle} \textbf{#1}, Note #2\brksp Thesis \textit{#3} \brksp\hspace*{2.85em} \textit{#4}, Supervisor: #5 \brk}
+	{\hspace*{\the\myle} \textbf{#1}, Grade #2\brksp Thesis \textit{#3} \brksp\hspace*{2.85em} \textit{#4}, Supervisor: #5 \brk}
 }
 
 \newcommand{\erasentry}[2]{
-	{\hspace*{\the\myle} \textbf{#1}, Note #2 \brk}
+	{\hspace*{\the\myle} \textbf{#1}, Grade #2 \brk}
 }
 
-\newcommand{\abientry}[3]{
-	{\hspace*{\the\myle} \textbf{#1}, Note #2 \brksp Leistungskurse: #3 \brk}
+\newcommand{\abientry}[2]{
+	{\hspace*{\the\myle} \textbf{#1}, Grade #2 \brk}
 }
 
 \newcommand{\schlentry}[2]{
@@ -123,8 +123,8 @@
 }
 
 %	Professional Experience Entries
-\newcommand{\lprofentry}[4]{
-	{\hspace*{\the\myle} \textbf{#1} #2 \brksp #3 \brksp #4}
+\newcommand{\lprofentry}[3]{
+	{\hspace*{\the\myle} \textbf{#1} #2 \brksp #3}
 }
 
 \newcommand{\sprofentry}[2]{
@@ -176,7 +176,7 @@
 			\textsc{#1}	& \hspace{\the\mylengt}	#2 \brk
 			\textsc{#3}	& \hspace{\the\mylengt}	#4 \brk
 			\textsc{#5}	& \hspace{\the\mylengt}	#6 \brk
-			\textsc{#7}	& \hspace{\the\mylengt}	#8 \brk
+			\textsc{#7}	& \brk
 		\end{tabular}
 	\end{table}
 }
