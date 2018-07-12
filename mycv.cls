@@ -4,6 +4,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{calc}
 \RequirePackage{datetime}
+%\RequirePackage{url}
 
 %---------------%
 %	CUSTOMIZE	%
@@ -203,15 +204,15 @@
 }
 
 %	Contact
-\newcommand{\contact}[2]{
-	\centerline{\faMobile\hspace{0.1cm}#1 \hspace{0.1cm}\Envelope\hspace{0.1cm}\href{mailto:#2}{#2}}
+\newcommand{\contact}[3]{
+	\centerline{\faMobile\hspace{0.1cm}#1 \hspace{0.1cm}\Envelope\hspace{0.1cm}\href{mailto:#2}{#3}}
 }
 
 %	Signature
 \newcommand{\signature}[1]{
 	\vspace{2cm}
 	\begin{figure}[h]
-		\includegraphics[width=4cm, height=2cm]{#1}
+		\includegraphics[width=3cm, height=1cm]{#1}
 		\caption*{\hspace*{-14cm}\myformat\today}
 	\end{figure}
 }
@@ -221,3 +222,22 @@
 	\vfill
 	\noindent\footnotesize{Anhang: #1}
 }
+
+% Anschreiben
+
+% Empfänger
+\newcommand{\recip}[1]{
+	\vspace{1cm}
+	{#1}\hfill \myformat\today
+	\vspace{1cm}
+}
+
+% Schlussformel
+\newcommand{\eletter}[2]{
+	\vspace{1cm}
+	{#1}
+	\begin{figure}[h]
+		\includegraphics[width=3cm, height=1cm]{#2}
+	\end{figure}
+}
+
